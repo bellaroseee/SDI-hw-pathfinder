@@ -1,0 +1,32 @@
+# Finding a path to itself
+
+created graph graph1
+
+added node A to graph1
+added node B to graph1
+added node C to graph1
+
+path from A to A:
+total cost: 0.000
+
+path from B to B:
+total cost: 0.000
+
+path from C to C:
+total cost: 0.000
+
+
+created graph graph2
+
+added node A to graph2
+added node B to graph2
+added node C to graph2
+
+path from A to A:
+total cost: 0.000
+
+path from B to B:
+total cost: 0.000
+
+path from C to C:
+total cost: 0.000

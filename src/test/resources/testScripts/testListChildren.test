@@ -1,0 +1,28 @@
+# Test listChildren empty (no children)
+
+CreateGraph graph1
+
+AddNode graph1 A
+
+ListChildren graph1 A
+
+# Test listChildren sorted by weight
+
+AddNode graph1 B
+AddNode graph1 C
+AddNode graph1 D
+
+AddEdge graph1 A A 1.0
+AddEdge graph1 A B 1.0
+AddEdge graph1 A C 2.0
+AddEdge graph1 A D 3.0
+AddEdge graph1 A A 10.0
+AddEdge graph1 A B 10.0
+
+ListChildren graph1 A
+
+# Test listChildren cyclic graph
+
+AddEdge graph1 B A 1.0
+
+ListChildren graph1 A

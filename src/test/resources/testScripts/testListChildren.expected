@@ -1,0 +1,28 @@
+# Test listChildren empty (no children)
+
+created graph graph1
+
+added node A to graph1
+
+the children of A in graph1 are:
+
+# Test listChildren sorted by weight
+
+added node B to graph1
+added node C to graph1
+added node D to graph1
+
+added edge 1.000 from A to A in graph1
+added edge 1.000 from A to B in graph1
+added edge 2.000 from A to C in graph1
+added edge 3.000 from A to D in graph1
+added edge 10.000 from A to A in graph1
+added edge 10.000 from A to B in graph1
+
+the children of A in graph1 are: A(1.0) A(10.0) B(1.0) B(10.0) C(2.0) D(3.0)
+
+# Test listChildren cyclic graph
+
+added edge 1.000 from B to A in graph1
+
+the children of A in graph1 are: A(1.0) A(10.0) B(1.0) B(10.0) C(2.0) D(3.0)

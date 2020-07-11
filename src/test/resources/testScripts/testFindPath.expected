@@ -1,0 +1,32 @@
+# Test findPath 1 hop
+
+created graph graph1
+
+added node PointA to graph1
+added node PointB to graph1
+
+added edge 10.000 from PointA to PointB in graph1
+added edge 5.000 from PointA to PointB in graph1
+
+path from PointA to PointB:
+PointA to PointB with weight 5.000
+total cost: 5.000
+
+# Test findPath 2 hops
+
+added node PointC to graph1
+
+added edge 2.000 from PointB to PointC in graph1
+added edge 15.000 from PointA to PointC in graph1
+
+path from PointA to PointC:
+PointA to PointB with weight 5.000
+PointB to PointC with weight 2.000
+total cost: 7.000
+
+# Test findPath cyclic
+
+added edge 1.000 from PointC to PointA in graph1
+
+path from PointA to PointA:
+total cost: 0.000

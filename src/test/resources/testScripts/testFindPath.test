@@ -1,0 +1,26 @@
+# Test findPath 1 hop
+
+CreateGraph graph1
+
+AddNode graph1 PointA
+AddNode graph1 PointB
+
+AddEdge graph1 PointA PointB 10.0
+AddEdge graph1 PointA PointB 5.0
+
+FindPath graph1 PointA PointB
+
+# Test findPath 2 hops
+
+AddNode graph1 PointC
+
+AddEdge graph1 PointB PointC 2.0
+AddEdge graph1 PointA PointC 15.0
+
+FindPath graph1 PointA PointC
+
+# Test findPath cyclic
+
+AddEdge graph1 PointC PointA 1.0
+
+FindPath graph1 PointA PointA

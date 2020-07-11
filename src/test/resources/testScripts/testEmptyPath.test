@@ -1,0 +1,26 @@
+# Finding a path to itself
+
+CreateGraph graph1
+
+AddNode graph1 A
+AddNode graph1 B
+AddNode graph1 C
+
+FindPath graph1 A A
+
+FindPath graph1 B B
+
+FindPath graph1 C C
+
+
+CreateGraph graph2
+
+AddNode graph2 A
+AddNode graph2 B
+AddNode graph2 C
+
+FindPath graph2 A A
+
+FindPath graph2 B B
+
+FindPath graph2 C C
